@@ -2,9 +2,10 @@ package parking;
 
 public class Fichavehiculo extends javax.swing.JFrame {
 
-    
+    Moto miMoto = new Moto();
+
     public Fichavehiculo() {
-        Moto miMoto=new Moto();
+
         initComponents();
     }
 
@@ -93,19 +94,18 @@ public class Fichavehiculo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void textomarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textomarcaActionPerformed
- 
+
     }//GEN-LAST:event_textomarcaActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        miMoto.marca=textomarca.getText();
-        miMoto.modelo=Integer.parseInt(textomodelo.getText());
-        miMoto.año=Integer.parseInt(textoaño.getText());
-        miMoto.cilindraje=Integer.parseInt(textocilindraje.getText());
+        miMoto.marca = textomarca.getText();
+        miMoto.modelo = Integer.parseInt(textomodelo.getText());
+        miMoto.año = Integer.parseInt(textoaño.getText());
+        miMoto.cilindraje = Integer.parseInt(textocilindraje.getText());
     }//GEN-LAST:event_jButton1MouseClicked
 
     public static void main(String args[]) {
-       
-       
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Fichavehiculo().setVisible(true);

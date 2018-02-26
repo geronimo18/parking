@@ -1,9 +1,10 @@
 package parking;
 
-public class Moto extends Vehiculo{
+public class Moto extends Vehiculo {
 
-    void derrapar (){
-        
-    };
-    
+    void derrapar() {
+
+    }
+;
+
 }

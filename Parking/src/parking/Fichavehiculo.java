@@ -1,11 +1,16 @@
 package parking;
 
+import javax.swing.JOptionPane;
+
 public class Fichavehiculo extends javax.swing.JFrame {
+    Moto misMotos[]=new Moto[50];
 
     Moto miMoto = new Moto();
 
     public Fichavehiculo() {
-
+        for (int a=0; a<50; a++){
+            misMotos[a]=new Moto();
+        }
         initComponents();
     }
 
@@ -102,6 +107,7 @@ public class Fichavehiculo extends javax.swing.JFrame {
         miMoto.modelo = Integer.parseInt(textomodelo.getText());
         miMoto.año = Integer.parseInt(textoaño.getText());
         miMoto.cilindraje = Integer.parseInt(textocilindraje.getText());
+        //JOptionPane.showMessageDialog(this, "Hola");
     }//GEN-LAST:event_jButton1MouseClicked
 
     public static void main(String args[]) {
